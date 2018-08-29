@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+}
+
+p, li, a, h4{
+  font-size: 25px;
+}
+
+.curriculum {
+  width: 100vw;
+  height: 140vw;
+  /* background-color: thistle; */
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5ch;
+  font-size: 60px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.title {
+  font-weight: 400;
+  color: grey;
+  font-size: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4vh 0;
+}
+
+main > div {
+  margin: 0 40px 40px 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.goals {
+  grid-area: goals;
+  text-align: justify;
+}
+.experience {
+  grid-area: exp;
+}
+.formation {
+  grid-area: form;
+}
+
+.skills {
+  grid-area: skills;
+  margin: 0;
+  line-height: 1;
+}
+
+.skills > ul {
+  list-style-type: square;
+}
+
+.contact {
+  grid-area: contact;
+  border: 1px solid grey;
+  margin: 5px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact ul {
+  padding: 0;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact a {
+  text-decoration: none;
+  margin-left: 1ch;
+  color: black;
+}
+
+main {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 45vw 40vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "goals skills"
+  "exp skills"
+  "form skills"
+  "form contact"
+  ". contact";
+  /* "skills goals"
+  "skills goals"
+  "skills exp"
+  "skills exp"
+  "skills form"
+  "skills form"
+  "contact form"; */
+  margin: 0 auto;
+  grid-column-gap: 6vw;
+}
