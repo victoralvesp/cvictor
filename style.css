@@ -8,6 +8,11 @@ p, li, a, h4{
   font-size: 25px;
 }
 
+p {
+  text-align: justify;
+
+}
+
 .curriculum {
   width: 100vw;
   height: 140vw;
@@ -19,7 +24,7 @@ p, li, a, h4{
   font-weight: 600;
   letter-spacing: 0.5ch;
   font-size: 60px;
-  margin-top: 30px;
+  margin-top: 40px;
   line-height: 1;
 }
 
@@ -34,11 +39,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 4vh 0;
-}
-
-main > div {
-  margin: 0 40px 40px 20px;
+  margin: 5vh 0;
 }
 
 h2 {
@@ -48,7 +49,6 @@ h2 {
 
 .goals {
   grid-area: goals;
-  text-align: justify;
 }
 .experience {
   grid-area: exp;
@@ -63,22 +63,23 @@ h2 {
   line-height: 1;
 }
 
-.skills > ul {
-  list-style-type: square;
-}
-
 .contact {
   grid-area: contact;
   border: 1px solid grey;
-  margin: 5px 50px;
+  margin: 15px 50px 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.contact h2 {
+  margin: 0;
+}
+
 .contact ul {
   padding: 0;
+  margin-bottom: 5px;
 }
 
 .contact li {
@@ -93,22 +94,14 @@ h2 {
 
 main {
   display: grid;
-  width: 90vw;
-  grid-template-columns: 45vw 40vw;
+  width: 85vw;
+  grid-template-columns: 30vw 50vw;
   grid-template-rows: auto;
   grid-template-areas:
-  "goals skills"
-  "exp skills"
-  "form skills"
-  "form contact"
-  ". contact";
-  /* "skills goals"
   "skills goals"
   "skills exp"
-  "skills exp"
   "skills form"
-  "skills form"
-  "contact form"; */
+  "skills contact";
   margin: 0 auto;
-  grid-column-gap: 6vw;
+  grid-column-gap: 5vw;
 }
