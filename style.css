@@ -100,8 +100,8 @@ main {
   grid-template-areas:
   "skills goals"
   "skills exp"
-  "skills form"
-  "skills contact";
+  "contact form"
+  "contact _blank";
   margin: 0 auto;
   grid-column-gap: 5vw;
 }
