@@ -4,8 +4,11 @@
   line-height: 1.8;
 }
 
-p, li, a, h4{
+p, li, a {
   font-size: 25px;
+}
+h4{
+    font-size: 30px;
 }
 span{
   font-size: 20px;
@@ -52,17 +55,23 @@ h2 {
 
 .goals {
   grid-area: goals;
+  margin: 100px 50px 0px 50px;
 }
 .experience {
   grid-area: exp;
+  margin: 50px 50px 0px 50px;
+}
+.experience > div > p, .experience > div > div{
+    margin-left: 25px;
 }
 .formation {
   grid-area: form;
+  margin: 0px 50px 0px 50px;
 }
 
 .skills {
   grid-area: skills;
-  margin: 0;
+  margin: 15px 50px 0px 50px;
   line-height: 1;
 }
 
@@ -102,11 +111,16 @@ main {
   grid-template-columns: 45vw 50vw;
   grid-template-rows: auto;
   grid-template-areas:
+  "skills contact"
   "skills goals"
-  "skills exp"
-  "contact form"
-  "contact _blank";
+  "skills form"
+  "exp exp"
+  "_blank _blank";
   margin: 0 auto;
   grid-column-gap: 1vw;
   padding: 2em;
+}
+
+footer {
+    height: 10vh;
 }
