@@ -7,10 +7,13 @@
 p, li, a, h4{
   font-size: 25px;
 }
+span{
+  font-size: 20px;
+  text-align: justify;
+}
 
 p {
   text-align: justify;
-
 }
 
 .curriculum {
@@ -94,8 +97,9 @@ h2 {
 
 main {
   display: grid;
-  width: 85vw;
-  grid-template-columns: 30vw 50vw;
+  width: 95vw;
+  height: 95vh;
+  grid-template-columns: 45vw 50vw;
   grid-template-rows: auto;
   grid-template-areas:
   "skills goals"
@@ -103,5 +107,6 @@ main {
   "contact form"
   "contact _blank";
   margin: 0 auto;
-  grid-column-gap: 5vw;
+  grid-column-gap: 1vw;
+  padding: 2em;
 }
